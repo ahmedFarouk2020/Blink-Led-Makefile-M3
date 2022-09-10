@@ -10,3 +10,8 @@ This is a Simple project to test makefile on an ARM Cortex M3 Target
 2. `make clean` to remove binaries and `.o` files
 3. `make flash` to upload the code to MCU -- NOT TESTED
 4. `make erase` to make full memory erase -- NOT TESTED
+
+## IMPORTANT NOTE
+If you want to use this on ARM-CORTEX M4, You have to change toolchain options, in `C Flags` section, according to your target architecture 
+> Example:
+change -mcpu=cortex-m3 to -mcpu=cortex-m4
